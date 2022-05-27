@@ -6,8 +6,8 @@ This project uses https://github.com/ohmyadd/wetftp as a high interaction honeyp
 ## Project Functionalities
 - Collecting logs
 - Convert the logs into a json format that can be imported to neo4j using (apoc.import.json)
-- View the graph in neo4j
-
+- View the graph in neo4j with two different type of graphs (Timeline, Overview)
+## Graph Example
 
 ## To run the project what you need is:
 - Having python3 -_-.
