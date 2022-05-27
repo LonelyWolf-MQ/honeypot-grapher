@@ -1,0 +1,11 @@
+{"type":"node","id":"0","labels":["Qiii"],"properties":{"actionname":"127.0.0.1","actionid":"NS0","actiondescription":"User Has Opened A New Session.","actioncommand":"ftp <machine ip>","ftpcommand":"SYST","actionip":"127.0.0.1","timestamp":"220527-05:26:48"}}
+{"type":"node","id":"2","labels":["Qiii"],"properties":{"actionname":"ls","actionid":"LD2","actiondescription":"User Listed The Current Directory.","actioncommand":"['ls', 'dir']","ftpcommand":"LIST","actionip":"127.0.0.1","timestamp":"220527-05:26:55"}}
+{"id":"2","type":"relationship","label":"ListingDirectory","start":{"id":"0","labels":["Qiii"]},"end":{"id":"2","labels":["Qiii"]}}
+{"type":"node","id":"3","labels":["Qiii"],"properties":{"actionname":"test","actionid":"CD3","actiondescription":"User Created a New Directory","actioncommand":"mkdir","ftpcommand":"MKD","actionip":"127.0.0.1","timestamp":"220527-05:26:58"}}
+{"id":"3","type":"relationship","label":"CreateDirectory","start":{"id":"0","labels":["Qiii"]},"end":{"id":"3","labels":["Qiii"]}}
+{"type":"node","id":"4","labels":["Qiii"],"properties":{"actionname":"home","actionid":"UF4","actiondescription":"User Uploaded a File To FTP Server","actioncommand":"put","ftpcommand":"STOR","actionip":"127.0.0.1","timestamp":"220527-05:27:04"}}
+{"id":"4","type":"relationship","label":"UploadedFile","start":{"id":"0","labels":["Qiii"]},"end":{"id":"4","labels":["Qiii"]}}
+{"type":"node","id":"5","labels":["Qiii"],"properties":{"actionname":"bin","actionid":"CD5","actiondescription":"User Created a New Directory","actioncommand":"mkdir","ftpcommand":"MKD","actionip":"127.0.0.1","timestamp":"220527-05:27:07"}}
+{"id":"5","type":"relationship","label":"CreateDirectory","start":{"id":"0","labels":["Qiii"]},"end":{"id":"5","labels":["Qiii"]}}
+{"type":"node","id":"6","labels":["Qiii"],"properties":{"actionname":"test","actionid":"RD6","actiondescription":"User Removed a Directory","actioncommand":"rmdir","ftpcommand":"RMD","actionip":"127.0.0.1","timestamp":"220527-05:27:15"}}
+{"id":"6","type":"relationship","label":"RemoveDirectory","start":{"id":"0","labels":["Qiii"]},"end":{"id":"6","labels":["Qiii"]}}

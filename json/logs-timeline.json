@@ -1,0 +1,43 @@
+{"type":"node","id":"1","labels":["pwddd"],"properties":{"actionname":"127.0.0.1","actionid":"NS1","actiondescription":"User Has Opened A New Session.","actioncommand":"ftp <machine ip>","ftpcommand":"SYST","actionip":"127.0.0.1","timestamp":"220527-06:46:56"}}
+{"type":"node","id":"2","labels":["pwddd"],"properties":{"actionname":"","actionid":"LD2","actiondescription":"User Listed The Current Directory.","actioncommand":"['ls', 'dir']","ftpcommand":"LIST","actionip":"127.0.0.1","timestamp":"220527-06:47:00"}}
+{"id":"2","type":"relationship","label":"ListingDirectory","start":{"id":"1","labels":["pwddd"]},"end":{"id":"2","labels":["pwddd"]}}
+{"type":"node","id":"3","labels":["pwddd"],"properties":{"actionname":"shell","actionid":"CD3","actiondescription":"User Created a New Directory","actioncommand":"mkdir","ftpcommand":"MKD","actionip":"127.0.0.1","timestamp":"220527-06:47:04"}}
+{"id":"3","type":"relationship","label":"CreateDirectory","start":{"id":"2","labels":["pwddd"]},"end":{"id":"3","labels":["pwddd"]}}
+{"type":"node","id":"4","labels":["pwddd"],"properties":{"actionname":"shell","actionid":"CWD4","actiondescription":"User Moved To Another Directory.","actioncommand":"cd","ftpcommand":"CWD","actionip":"127.0.0.1","timestamp":"220527-06:47:08"}}
+{"id":"4","type":"relationship","label":"ChangeDirectory","start":{"id":"3","labels":["pwddd"]},"end":{"id":"4","labels":["pwddd"]}}
+{"type":"node","id":"5","labels":["pwddd"],"properties":{"actionname":"shell.php","actionid":"UF5","actiondescription":"User Uploaded a File To FTP Server","actioncommand":"put","ftpcommand":"STOR","actionip":"127.0.0.1","timestamp":"220527-06:47:19"}}
+{"id":"5","type":"relationship","label":"UploadedFile","start":{"id":"4","labels":["pwddd"]},"end":{"id":"5","labels":["pwddd"]}}
+{"type":"node","id":"6","labels":["pwddd"],"properties":{"actionname":"../","actionid":"CWD6","actiondescription":"User Moved To Another Directory.","actioncommand":"cd","ftpcommand":"CWD","actionip":"127.0.0.1","timestamp":"220527-06:47:23"}}
+{"id":"6","type":"relationship","label":"ChangeDirectory","start":{"id":"5","labels":["pwddd"]},"end":{"id":"6","labels":["pwddd"]}}
+{"type":"node","id":"7","labels":["pwddd"],"properties":{"actionname":"","actionid":"LD7","actiondescription":"User Listed The Current Directory.","actioncommand":"['ls', 'dir']","ftpcommand":"LIST","actionip":"127.0.0.1","timestamp":"220527-06:47:24"}}
+{"id":"7","type":"relationship","label":"ListingDirectory","start":{"id":"6","labels":["pwddd"]},"end":{"id":"7","labels":["pwddd"]}}
+{"type":"node","id":"8","labels":["pwddd"],"properties":{"actionname":"home","actionid":"RD8","actiondescription":"User Removed a Directory","actioncommand":"rmdir","ftpcommand":"RMD","actionip":"127.0.0.1","timestamp":"220527-06:47:32"}}
+{"id":"8","type":"relationship","label":"RemoveDirectory","start":{"id":"7","labels":["pwddd"]},"end":{"id":"8","labels":["pwddd"]}}
+{"type":"node","id":"9","labels":["pwddd"],"properties":{"actionname":"","actionid":"LD9","actiondescription":"User Listed The Current Directory.","actioncommand":"['ls', 'dir']","ftpcommand":"LIST","actionip":"127.0.0.1","timestamp":"220527-06:47:39"}}
+{"id":"9","type":"relationship","label":"ListingDirectory","start":{"id":"8","labels":["pwddd"]},"end":{"id":"9","labels":["pwddd"]}}
+{"type":"node","id":"10","labels":["pwddd"],"properties":{"actionname":"Get Path of /","actionid":"GP10","actiondescription":"User Printed The Current Directory Path.","actioncommand":"pwd","ftpcommand":"PWD","actionip":"127.0.0.1","timestamp":"220527-06:47:44"}}
+{"id":"10","type":"relationship","label":"GetPath","start":{"id":"9","labels":["pwddd"]},"end":{"id":"10","labels":["pwddd"]}}
+{"type":"node","id":"11","labels":["pwddd"],"properties":{"actionname":"home","actionid":"CWD11","actiondescription":"User Moved To Another Directory.","actioncommand":"cd","ftpcommand":"CWD","actionip":"127.0.0.1","timestamp":"220527-06:47:52"}}
+{"id":"11","type":"relationship","label":"ChangeDirectory","start":{"id":"10","labels":["pwddd"]},"end":{"id":"11","labels":["pwddd"]}}
+{"type":"node","id":"12","labels":["pwddd"],"properties":{"actionname":"","actionid":"LD12","actiondescription":"User Listed The Current Directory.","actioncommand":"['ls', 'dir']","ftpcommand":"LIST","actionip":"127.0.0.1","timestamp":"220527-06:47:55"}}
+{"id":"12","type":"relationship","label":"ListingDirectory","start":{"id":"11","labels":["pwddd"]},"end":{"id":"12","labels":["pwddd"]}}
+{"type":"node","id":"13","labels":["pwddd"],"properties":{"actionname":"shell.php","actionid":"GF13","actiondescription":"User Downloaded a File From FTP Server","actioncommand":"get","ftpcommand":"RETR","actionip":"127.0.0.1","timestamp":"220527-06:47:59"}}
+{"id":"13","type":"relationship","label":"DownloadedFile","start":{"id":"12","labels":["pwddd"]},"end":{"id":"13","labels":["pwddd"]}}
+{"type":"node","id":"14","labels":["pwddd"],"properties":{"actionname":"..","actionid":"CWD14","actiondescription":"User Moved To Another Directory.","actioncommand":"cd","ftpcommand":"CWD","actionip":"127.0.0.1","timestamp":"220527-06:48:02"}}
+{"id":"14","type":"relationship","label":"ChangeDirectory","start":{"id":"13","labels":["pwddd"]},"end":{"id":"14","labels":["pwddd"]}}
+{"type":"node","id":"15","labels":["pwddd"],"properties":{"actionname":"shell.php","actionid":"CWD15","actiondescription":"User Moved To Another Directory.","actioncommand":"cd","ftpcommand":"CWD","actionip":"127.0.0.1","timestamp":"220527-06:48:19"}}
+{"id":"15","type":"relationship","label":"ChangeDirectory","start":{"id":"14","labels":["pwddd"]},"end":{"id":"15","labels":["pwddd"]}}
+{"type":"node","id":"16","labels":["pwddd"],"properties":{"actionname":"Get Path of /","actionid":"GP16","actiondescription":"User Printed The Current Directory Path.","actioncommand":"pwd","ftpcommand":"PWD","actionip":"127.0.0.1","timestamp":"220527-06:48:22"}}
+{"id":"16","type":"relationship","label":"GetPath","start":{"id":"15","labels":["pwddd"]},"end":{"id":"16","labels":["pwddd"]}}
+{"type":"node","id":"17","labels":["pwddd"],"properties":{"actionname":"shell","actionid":"CWD17","actiondescription":"User Moved To Another Directory.","actioncommand":"cd","ftpcommand":"CWD","actionip":"127.0.0.1","timestamp":"220527-06:48:24"}}
+{"id":"17","type":"relationship","label":"ChangeDirectory","start":{"id":"16","labels":["pwddd"]},"end":{"id":"17","labels":["pwddd"]}}
+{"type":"node","id":"18","labels":["pwddd"],"properties":{"actionname":"Get Path of /","actionid":"GP18","actiondescription":"User Printed The Current Directory Path.","actioncommand":"pwd","ftpcommand":"PWD","actionip":"127.0.0.1","timestamp":"220527-06:48:27"}}
+{"id":"18","type":"relationship","label":"GetPath","start":{"id":"17","labels":["pwddd"]},"end":{"id":"18","labels":["pwddd"]}}
+{"type":"node","id":"19","labels":["pwddd"],"properties":{"actionname":"","actionid":"LD19","actiondescription":"User Listed The Current Directory.","actioncommand":"['ls', 'dir']","ftpcommand":"LIST","actionip":"127.0.0.1","timestamp":"220527-06:48:28"}}
+{"id":"19","type":"relationship","label":"ListingDirectory","start":{"id":"18","labels":["pwddd"]},"end":{"id":"19","labels":["pwddd"]}}
+{"type":"node","id":"20","labels":["pwddd"],"properties":{"actionname":"shell.php","actionid":"GF20","actiondescription":"User Downloaded a File From FTP Server","actioncommand":"get","ftpcommand":"RETR","actionip":"127.0.0.1","timestamp":"220527-06:48:33"}}
+{"id":"20","type":"relationship","label":"DownloadedFile","start":{"id":"19","labels":["pwddd"]},"end":{"id":"20","labels":["pwddd"]}}
+{"type":"node","id":"21","labels":["pwddd"],"properties":{"actionname":"shell.php","actionid":"RD21","actiondescription":"User Removed a Directory","actioncommand":"rmdir","ftpcommand":"RMD","actionip":"127.0.0.1","timestamp":"220527-06:48:36"}}
+{"id":"21","type":"relationship","label":"RemoveDirectory","start":{"id":"20","labels":["pwddd"]},"end":{"id":"21","labels":["pwddd"]}}
+{"type":"node","id":"22","labels":["pwddd"],"properties":{"actionname":"Session Ended","actionid":"ES22","actiondescription":"User Exited The Current Session.","actioncommand":"['quit', 'exit', 'bye']","ftpcommand":"QUIT","actionip":"127.0.0.1","timestamp":"220527-06:48:50"}}
+{"id":"22","type":"relationship","label":"EndSession","start":{"id":"21","labels":["pwddd"]},"end":{"id":"22","labels":["pwddd"]}}
