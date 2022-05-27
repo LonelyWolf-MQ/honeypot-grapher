@@ -15,8 +15,8 @@ def ftplog2json():
             logline = line.strip()
             timestamp = logline[0:15]
             ipAddr = logline[16:31].strip()
-            additionalinput3 = logline[46:]
-            additionalinput4 = logline[47:]
+            additionalinput3 = logline[45:]
+            additionalinput4 = logline[46:]
 
             uploadFile = {
                 "ftpcommand": "STOR",
