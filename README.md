@@ -11,7 +11,7 @@ This project uses https://github.com/ohmyadd/wetftp as a high interaction honeyp
 ### Overview Graph
 ![Overview Graph](https://github.com/LonelyWolf-MQ/graphit-ftphoneypot/blob/main/example/overview.png)
 ### Timeline Graph
-![Timeline Graph](https://github.com/LonelyWolf-MQ/graphit-ftphoneypot/blob/main/example/timeline.png =250x)
+![Timeline Graph](https://github.com/LonelyWolf-MQ/graphit-ftphoneypot/blob/main/example/timeline.png)
 
 ## To run the project what you need is:
 - Having python3 -_-.
