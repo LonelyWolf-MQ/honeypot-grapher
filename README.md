@@ -8,6 +8,8 @@ This project uses https://github.com/ohmyadd/wetftp as a high interaction honeyp
 - Convert the logs into a json format that can be imported to neo4j using (apoc.import.json)
 - View the graph in neo4j with two different type of graphs (Timeline, Overview)
 ## Graph Example
+![Overview Graph](https://github.com/LonelyWolf-MQ/graphit-ftphoneypot/blob/main/example/overview.png)
+![Timeline Graph](https://github.com/LonelyWolf-MQ/graphit-ftphoneypot/blob/main/example/timeline.png)
 
 ## To run the project what you need is:
 - Having python3 -_-.
@@ -23,3 +25,10 @@ This project uses https://github.com/ohmyadd/wetftp as a high interaction honeyp
 ### Long period goal:
 - Create my own honeypots for multiple services such as HTTP/SSH/...
 - Convert this project to a framework with real time monitoring.
+
+
+
+
+if you noticed any mistake or have any suggestion reached me at my Twitter/LinkedIn account:
+- [![Twitter](https://img.shields.io/twitter/follow/MHMDQi?style=social)](https://twitter.com/intent/follow?screen_name=MHMDQi)
+- [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mhmdqi/)
