@@ -19,6 +19,7 @@ This project uses ![WetFTP](https://github.com/ohmyadd/wetftp) as a high interac
 - Install the latest Neo4j database version.
 - Install the latest APOC plugins (So you can call the apoc.import.json procedure).
 - Additional: ```pip3 install py2neo```, then modify bolt port and username/password of neo4j database if you wish to run the neo4j cypher queries within the python script.
+- Run: ```python3 main.py -h```
 
 ## Future work
 ### Short period goal:
@@ -27,7 +28,7 @@ This project uses ![WetFTP](https://github.com/ohmyadd/wetftp) as a high interac
 
 ### Long period goal:
 - Create my own honeypots for multiple services such as HTTP/SSH/SMB/...
-- Use Provenance System such as ![SPADE](https://github.com/ashish-gehani/SPADE)
+- Use Provenance so we can correlate the attacker behaviour more using framework such as ![SPADE](https://github.com/ashish-gehani/SPADE)
 - Convert this project to a framework with real time monitoring.
 
 
