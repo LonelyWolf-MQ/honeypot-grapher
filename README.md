@@ -20,6 +20,7 @@ This project uses ![WetFTP](https://github.com/ohmyadd/wetftp) as a high interac
 - Install the latest APOC plugins (So you can call the apoc.import.json procedure).
 - Additional: ```pip3 install py2neo```, then modify bolt port and username/password of neo4j database if you wish to run the neo4j cypher queries within the python script.
 - Run: ```python3 main.py -h```
+- Example: ```python3 main.py --logpath cmd.log --mode timeline --jsonoutput timeline.json --neo4j --neo4juri bolt://localhost:11003 --neo4juser neo4j --neo4jpasswd neo4j --label Node```
 
 ## Future work
 ### Short period goal:
